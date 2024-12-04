@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+    i#burguer {
+        display: none;
+    }
+
+    header > nav {
+        display: inline-block;
+    }
+
+    header > h1 {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    header > nav > a {
+        display: inline-block;
+        background-color: #ff6600;
+        color: white;
+    }
+
+    header > nav > a:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        margin: auto;
+        width: 100vw;
+    }
+
+    i#burguer {
+        display: none;
+    }
+
+    header  {
+        display: flex;
+        margin: auto;
+        width: 100vw;
+        height: 90px;
+        
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header > h1 {
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    header > nav > a {
+        background-color: #ff6600;
+        color: white;
+        display: inline-block;
+    
+    }
+
+    main {
+        margin: auto;
+        margin-top: 10px;
+        width: 90vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        header {
+            display: flex;
+            margin: auto;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+
+
+        main {
+            margin: auto;
+            margin-top: 10px;
+            width: 60vw;
+        }
+    }
+
+    
+}
